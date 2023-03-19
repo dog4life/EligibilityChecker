@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Eligibility Checker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <style>
+        .Checker {
+            border: 2px solid black;
+            width: 500px;
+            margin: auto;
+            background-color: #ffffff41;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h4{text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+        input{
+        padding: 8px 15px; border-radius: 5px;
+        }
+        form{
+            display:flex;
+            justify-content: center;
+        }
+        .Wrap{
+            display: flex;
+        justify-content:center;
+    }
+    body{
+        background: linear-gradient(#ff73b251, #fdff7350, #7fff734f, #73faff4f);
+        background-repeat: no-repeat;
+        height: 550px
+    }
+
+    #show-result{
+        font-family: 'Balsamiq Sans', cursive; 
+        text-align: center;
+    }
+
+    /* box-shadow */
+    /* border-radius */
+    /* background:linear-gradient() */
+    </style>
+</head>
+
+<body>
+    <h1>College Eligibility Checker</h1>
+    <br>
+    <br>
+    <div class="Checker">
+        <h4>Enter your marks!</h4>
+        <form>
+            <input type="number" placeholder="Enter your marks here!" id="marks">
+        </form>
+        <br>
+        <div class="Wrap">
+        <button onclick="check_eligibility()">Check!</button>
+    </div>
+    <h2 id="show-result"></h2>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
